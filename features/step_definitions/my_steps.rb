@@ -22,13 +22,10 @@ When(/^doy click en el boton "(.*?)"$/) do |boton|
   click_button(boton)
 end
 
-
 Then(/^debo ver la letra "(.*?)" en la celda (\d+),(\d+)$/) do |text, x, y|
- #cell = "#{x}:#{y}"
+ cell = "#{x}:#{y}"
  # puts text + "---------------------------------------------------"
-
-  #last_response.should have_xpath( "//td[@id=\"#{cell}\"]") do |td|
-  #  td.should =~ contain( text )
-  #end
-  last_response.body.should =~ /#{text}/m
+ last_response.should have_xpath( "//td[@id=\"#{cell}\"]") do |td|
+   td.text.should contain(text )
+ end
 end

@@ -19,10 +19,6 @@ Scenario:  debo poder ver los nombres de los jugadores
   Given que abri la aplicacion
   Then debo ver "Jugador 2 - X"
 
-Scenario:  debo poder ver una O en el campo uno
-  Given que abri la aplicacion
-  Then debo ver la letra "O" en la celda 1,1
-
 Scenario: debo poder ingresar las coordenadas
   Given que abri la aplicacion
   When cuando lleno la posicion "X" con 1
