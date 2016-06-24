@@ -10,3 +10,11 @@ Scenario: debo poder ver un pantalla de bienvenida
 Scenario: debo poder ver la cuadricula base del juego
   Given que abri la aplicacion
   Then debo ver la tabla base de nueve cuadros vacios
+
+Scenario:  debo poder ver los nombres de los jugadores
+  Given que abri la aplicacion
+  Then debo ver "Jugador 1 - O"	
+
+ Scenario:  debo poder ver los nombres de los jugadores
+  Given que abri la aplicacion
+  Then debo ver "Jugador 2 - X"	
