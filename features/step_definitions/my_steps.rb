@@ -13,3 +13,12 @@ Then(/^debo ver la tabla base de nueve cuadros vacios$/) do |marca="", x=1, y=1|
     td.should contain( marca )
   end
 end
+
+Then(/^debo ver la letra "(.*?)" en la celda (\d+),(\d+)$/) do |marca, x, y|
+  cell = "#{x}:#{y}"
+
+  last_response.should have_xpath( "//td[@id=\"#{cell}\"]") do |td|
+    td.should contain( marca )
+  end
+end
+
