@@ -22,3 +22,10 @@ Then(/^debo ver la letra "(.*?)" en la celda (\d+),(\d+)$/) do |marca, x, y|
   end
 end
 
+When(/^cuando la posicion "(.*?)" sea (\d+)$/) do |posicion, valor|
+   fill_in(posicion, :with => valor)
+
+end
+When(/^doy click en el boton "(.*?)"$/) do |arg1|
+  pending # express the regexp above with the code you wish you had
+end

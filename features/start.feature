@@ -22,3 +22,10 @@ Scenario:  debo poder ver los nombres de los jugadores
 Scenario:  debo poder ver una O en el campo uno
   Given que abri la aplicacion
   Then debo ver la letra "O" en la celda 1,1
+
+ Scenario: debo poder ingresar las coordenadas
+  Given que abri la aplicacion
+  When cuando la posicion "X" sea 1 
+  And cuando la posicion "Y" sea 1
+  #And doy click en el boton "jugar"
+  Then debo ver la letra "O" en la celda 1,1
